@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model { }
+class Trail extends Model { }
 
-Project.init(
+Trail.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -27,7 +27,7 @@ Project.init(
       allowNull: false,
     },
     difficulty: {
-      type: Datatypes.INTEGER,
+      type: DataTypes.INTEGER,
       allowNull: false,
     },
     user_id: {
@@ -43,7 +43,7 @@ Project.init(
     timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'trail',
   }
 );
 
