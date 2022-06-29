@@ -5,20 +5,20 @@ class Trail extends Model { }
 
 Trail.init(
   {
-    id: {
+    trail_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
     },
-    trailname: {
+    trail_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
     description: {
       type: DataTypes.STRING,
     },
-    location: {
+    state: {
       type: DataTypes.STRING,
       allowNull:false
     },
