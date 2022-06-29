@@ -1,0 +1,52 @@
+[
+  {
+    "trail_name": "Sunrise",
+    "description": "As the name suggests, spectacular sunrises. Not a lot of elevation",
+    "state": "ME",
+    "length": "20",
+    "difficulty": 2,
+    "user_id": "1"
+  },
+  {
+    "trail_name": "Wickham Gorge",
+    "description": "Still some areas washed out from Hurricane Irene, but passable if you are nimble",
+    "state": "VT",
+    "length": "20",
+    "difficulty": "4"
+  },
+  {
+    "trail_name": "Moosehorn",
+    "description": "Nice day hike, not too strenuous",
+    "state": "ME",
+    "length": "5",
+    "difficulty": "3"
+  },
+  {
+    "trail_name": "Huntington Ravine Trail",
+    "description": "On the east face of Mount Washington with 2700 feet of elevation gain",
+    "state": "NH",
+    "length": "2.4",
+    "difficulty": "5"
+  },
+  {
+    "trail_name": "Ogunquit Cliff Walk",
+    "description": "Spectaqular views, level and very accessible",
+    "state": "ME",
+    "length": "2",
+    "difficulty": "1"
+  },
+  {
+    "trail_name": "Mount Olga",
+    "description": "Easy hike, Great for kids and families. Firetower with fantastic views of Vermonth and Massachusetts",
+    "state": "VT",
+    "length": "1.7",
+    "difficulty": "1"
+  },
+  {
+    "trail_name": "Mount Williard",
+    "description": "Stupendous views of Crawford Notch and surrounding range",
+    "state": "NH",
+    "length": "5",
+    "difficulty": "3"
+  }
+]
