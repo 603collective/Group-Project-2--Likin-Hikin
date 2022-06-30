@@ -19,7 +19,7 @@ router.get('/', async (req, res) => {
 
     // Pass serialized data and session flag into template
     res.render('homepage', { 
-      projects, 
+      trails, 
       logged_in: req.session.logged_in 
     });
   } catch (err) {
@@ -55,7 +55,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Trail }],
     });
 
     const user = userData.get({ plain: true });

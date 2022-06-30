@@ -15,8 +15,13 @@
     "password": "password12345"
   },
   {
-    "name": "Dale",
-    "email": "dale@aol.com",
+    "name": "Bugs",
+    "email": "bugs@aol.com",
+    "password": "password12345"
+  },
+  {
+    "name": "John Muir",
+    "email": "john@gmail.com",
     "password": "password12345"
   }
 ]
