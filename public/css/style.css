@@ -1,7 +1,9 @@
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
-
+select {
+  padding-left: 5px;
+}
 .no-button {
   background: none;
   border: none;

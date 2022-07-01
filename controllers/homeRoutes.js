@@ -13,10 +13,11 @@ router.get('/', async (req, res) => {
         },
       ],
     });
-
+//debugging 
+console.log("logging trail data",trailData);
     // Serialize data so the template can read it
     const trails = trailData.map((trail) => trail.get({ plain: true }));
-
+    console.log("logging trails",trails);
     // Pass serialized data and session flag into template
     res.render('homepage', { 
       trails, 
@@ -55,7 +56,7 @@ router.get('/profile', withAuth, async (req, res) => {
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
-      include: [{ model: Project }],
+      include: [{ model: Trail }],
     });
 
     const user = userData.get({ plain: true });
