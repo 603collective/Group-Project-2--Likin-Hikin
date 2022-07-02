@@ -4,6 +4,47 @@ header, .project:not(:last-child) {
 select {
   padding-left: 5px;
 }
+
+#forge {
+  font-style: italic;
+}
+
+#name {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #1b89bc;
+  font-style: italic;
+}
+
+#trail-desc {
+  background-color:springgreen;
+  color:darkblue
+}
+
+#trail-name {
+  background-color:springgreen;
+  color:darkblue
+}
+
+option:nth-child(1){
+  color:#056605;
+}
+
+option:nth-child(2){
+  color:#1b89bc;
+}
+
+option:nth-child(3){
+  color:red;
+}
+
+option:nth-child(4){
+  color:crimson;
+}
+
+option:nth-child(5){
+  color:orangered;
+}  
+
 .no-button {
   background: none;
   border: none;
@@ -24,4 +65,5 @@ select {
   font-weight: bold;
   margin-left: -5px;
 }
+
 
