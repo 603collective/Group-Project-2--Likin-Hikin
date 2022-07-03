@@ -1,9 +1,36 @@
+header {
+  background-color: darkgreen;
+  border-style: solid;
+  border-color: #1b89bc;
+}
+
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 select {
   padding-left: 5px;
 }
+
+#bcolorLogin {
+  background-color: lightgreen;
+}
+
+#bcolorSignUp {
+  background-color:#1b89bc
+}
+
+#loginForm {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+}
+
+#signUpForm {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
+}
+
 .no-button {
   background: none;
   border: none;
