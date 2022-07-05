@@ -1,3 +1,9 @@
+header {
+  background-color: darkgreen;
+  border-style: solid;
+  border-color: #1b89bc;
+}
+
 header, .project:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
@@ -5,45 +11,25 @@ select {
   padding-left: 5px;
 }
 
-#forge {
-  font-style: italic;
+#bcolorLogin {
+  background-color: lightgreen;
 }
 
-#name {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #1b89bc;
-  font-style: italic;
+#bcolorSignUp {
+  background-color:#1b89bc
 }
 
-#trail-desc {
-  background-color:springgreen;
-  color:darkblue
+#loginForm {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
 }
 
-#trail-name {
-  background-color:springgreen;
-  color:darkblue
+#signUpForm {
+  border-style: solid;
+  border-color: black;
+  border-radius: 25px;
 }
-
-option:nth-child(1){
-  color:#056605;
-}
-
-option:nth-child(2){
-  color:#1b89bc;
-}
-
-option:nth-child(3){
-  color:red;
-}
-
-option:nth-child(4){
-  color:crimson;
-}
-
-option:nth-child(5){
-  color:orangered;
-}  
 
 .no-button {
   background: none;
