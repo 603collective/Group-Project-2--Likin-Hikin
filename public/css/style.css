@@ -52,4 +52,62 @@ select {
   margin-left: -5px;
 }
 
+.showcase{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #646464;
+  padding: 100px 200px;
+}
 
+.showcase:before{
+  z-index: 777;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.showcase .content{
+  z-index: 888;
+  color: #fff;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  text-align: center;
+}
+
+.showcase .content h1{
+  font-size: 50px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 75px;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.showcase .content h1 span{
+  font-size: 75px;
+  font-weight: 600;
+}
+
+.showcase .content p{
+  margin-bottom: 25px;
+}
+
+.showcase .video{
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
