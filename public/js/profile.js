@@ -1,13 +1,16 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const name = document.querySelector('#trail-name').value.trim();
+  const trail_name = document.querySelector('#trail-name').value.trim();
   const description = document.querySelector('#trail-desc').value.trim();
+  const state = document.querySelector('#States').value.trim();
+  const length = document.querySelector('#miles').value.trim();
+  const difficulty = document.querySelector('#trail-difficulty').value.trim();
 
-  if (name && description) {
+  if (trail_name && description) {
     const response = await fetch(`/api/trails`, {
       method: 'POST',
-      body: JSON.stringify({ name, description }),
+      body: JSON.stringify({ trail_name, description, state, length, difficulty }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -41,6 +44,6 @@ document
   .querySelector('.new-trail-form')
   .addEventListener('submit', newFormHandler);
 
-document
-  .querySelector('.trail-list')
-  .addEventListener('click', delButtonHandler);
+//document
+ /// .querySelector('.trail-list')
+ // .addEventListener('click', delButtonHandler);
