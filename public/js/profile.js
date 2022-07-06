@@ -44,6 +44,6 @@ document
   .querySelector('.new-trail-form')
   .addEventListener('submit', newFormHandler);
 
-//document
- /// .querySelector('.trail-list')
- // .addEventListener('click', delButtonHandler);
+document
+  .querySelector('#delButton')
+  .addEventListener('click', delButtonHandler);
