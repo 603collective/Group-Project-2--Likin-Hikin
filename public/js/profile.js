@@ -45,5 +45,5 @@ document
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('#delButton')
+  .querySelector('.trails-list')
   .addEventListener('click', delButtonHandler);
