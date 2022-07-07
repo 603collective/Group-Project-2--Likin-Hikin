@@ -1,3 +1,4 @@
+
 header {
   background: rgba(0,0,0,.33);
   
@@ -5,20 +6,17 @@ header {
   
 }
 
-header, .project:not(:last-child) {
+
+
+
+header, .trail:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 select {
   padding-left: 5px;
 }
 
-#bcolorLogin {
-  ;
-}
 
-#bcolorSignUp {
- 
-}
 
 #loginForm {
  position: relative;
@@ -201,4 +199,9 @@ body {
 #myBtn:hover {
   background: #ddd;
   color: black;
+}
+
+.form-group{
+
+  border-radius: 25px;
 }
