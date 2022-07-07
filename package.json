@@ -1,7 +1,7 @@
 {
   "name": "group-project-2-likin-hikin",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hiking trails storage application\r https://arcane-dusk-68599.herokuapp.com/",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,9 @@
     "seed": "node seeds/seed.js",
     "watch": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
+  
+  "keywords": ["heroku"],
+  "author": "tyler",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -23,10 +24,21 @@
     "nodemailer": "^6.7.6",
     "sequelize": "^6.3.5"
   },
+  "engines": {
+    "node": "16.15.0"
+  },
   "devDependencies": {
     "eslint": "^7.12.1",
     "eslint-config-prettier": "^6.15.0",
     "nodemon": "^2.0.18",
     "prettier": "^2.1.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/603collective/Group-Project-2--Likin-Hikin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/603collective/Group-Project-2--Likin-Hikin/issues"
+  },
+  "homepage": "https://github.com/603collective/Group-Project-2--Likin-Hikin#readme"
 }
