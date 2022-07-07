@@ -1,6 +1,6 @@
 
 
-header, .project:not(:last-child) {
+header, .trail:not(:last-child) {
   border-bottom: 1px solid #ccc;
 }
 select {
