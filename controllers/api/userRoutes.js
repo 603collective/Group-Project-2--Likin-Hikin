@@ -5,23 +5,23 @@ router.post('/', async (req, res) => {
   try {
     const userData = await User.create(req.body);
     console.log(userData)
-    let transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_SMTP_ADDRESS,
-      port: process.env.EMAIL_SMTP_PORT,
-      secure: process.env.EMAIL_SMTP_PORT === '465',
-      auth: {
-        user: process.env.EMAIL_SENDER,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
+    // let transporter = nodemailer.createTransport({
+    //   host: process.env.EMAIL_SMTP_ADDRESS,
+    //   port: process.env.EMAIL_SMTP_PORT,
+    //   secure: process.env.EMAIL_SMTP_PORT === '465',
+    //   auth: {
+    //     user: process.env.EMAIL_SENDER,
+    //     pass: process.env.EMAIL_PASSWORD,
+    //   },
+    // });
   
 
-    let info = await transporter.sendMail({
-      from: `${process.env.EMAIL_DISPLAY_NAME} <${process.env.EMAIL_SENDER}>`, // sender address
-      to: `rwilliams05@gmail.com`, // list of receivers
-      subject: 'Welcome from the Likin Hikin Team!', // Subject line
-      text: 'You have joined a community that is just as passionate as you are about the great outdoors! We hope you find your next great hike on our app, and look forward to your contributions as well.', // plain text body
-    });
+    // let info = await transporter.sendMail({
+    //   from: `${process.env.EMAIL_DISPLAY_NAME} <${process.env.EMAIL_SENDER}>`, // sender address
+    //   to: `rwilliams05@gmail.com`, // list of receivers
+    //   subject: 'Welcome from the Likin Hikin Team!', // Subject line
+    //   text: 'You have joined a community that is just as passionate as you are about the great outdoors! We hope you find your next great hike on our app, and look forward to your contributions as well.', // plain text body
+    // });
 
     req.session.save(() => {
       req.session.user_id = userData.id;
