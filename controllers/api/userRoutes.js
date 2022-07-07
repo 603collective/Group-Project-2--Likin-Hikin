@@ -1,26 +1,23 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const mailer = require('./mailer');
 
 router.post('/', async (req, res) => {
   try {
-    const userData = await User.create({
-      name: req.body.name,
-      email: req.body.email,
-      password: req.body.password,
-    });
-    console.log(userData);
 
-    //create nodemailer
-   let transporter = nodemailer.createTransport({
-     host: process.env.EMAIL_SMTP_ADDRESS,
-      port: process.env.EMAIL_SMTP_PORT,
-      secure: process.env.EMAIL_SMTP_PORT === '465',
-      auth: {
-       user: process.env.EMAIL_SENDER,
-        pass: process.env.EMAIL_PASSWORD,
-      },
-    });
-  
+    const userData = await User.create(req.body);
+    console.log(userData)
+    mailer.sendEmail(req.body.email);
+    // let transporter = nodemailer.createTransport({
+    //   host: process.env.EMAIL_SMTP_ADDRESS,
+    //   port: process.env.EMAIL_SMTP_PORT,
+    //   secure: process.env.EMAIL_SMTP_PORT === '465',
+    //   auth: {
+    //     user: process.env.EMAIL_SENDER,
+    //     pass: process.env.EMAIL_PASSWORD,
+    //   },
+    // });
+
 
     let info = await transporter.sendMail({
       from: `${process.env.EMAIL_DISPLAY_NAME} <${process.env.EMAIL_SENDER}>`, // sender address
