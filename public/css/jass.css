@@ -422,6 +422,7 @@ button {
 a {
   color: #021f2c;
   text-decoration: none;
+  font-family: 'Rouge Script', cursive;
 }
 
 a:hover {
