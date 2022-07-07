@@ -420,9 +420,8 @@ button {
 }
 
 a {
-  color: #021f2c;
+  color: #1b89bc;
   text-decoration: none;
-  font-family: 'Rouge Script', cursive;
 }
 
 a:hover {
@@ -1010,7 +1009,7 @@ a:hover {
 }
 
 .btn.btn-primary {
-  background-color: #01050a;
+  background-color: #2d3e50;
   color: #d9e9e8;
 }
 

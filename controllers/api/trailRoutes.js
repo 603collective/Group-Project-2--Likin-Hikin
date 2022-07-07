@@ -19,7 +19,7 @@ router.delete('/:id', withAuth, async (req, res) => {
   try {
     const trailData = await Trail.destroy({
       where: {
-        trail_id: req.params.id,
+        id: req.params.id,
         user_id: req.session.user_id,
       },
     });

@@ -1,19 +1,19 @@
 <!-- Loop over each object in the projects array -->
 {{#each trails }}
-<div class="row mb-4 trail">
+<div class="row mb-4 project">
   <div class="col-md-5">
     <h2>
       <!-- Call helper function with triple brackets to render the emoji span as HTML -->
       {{{get_emoji}}}
-      <a href="/trail/{{trail_id}}"><b>{{trail_name}}</b></a>
+      <a href="/trail/{{trail_id}}">{{trail_name}}</a>
     </h2>
     <p>
-      <span for="img" aria-label="mountain">⛰️</span><b>
+      <span for="img" aria-label="mountain">⛰️</span>
       <!-- Pass needed_funding value to the helper function -->
-      <span id="difficulty"><b>{{difficulty}}</span>
-      out of 5 difficulty</b>
+      
+      out of 5 difficulty
     </p>
-     <p><i>Created by {{user.name}} on {{format_date createdAt}}</i></p>
+     <p>Created by {{user.name}} on {{format_date createdAt}}</p>
   </div>
   <div class="col-md-7">
     <p>

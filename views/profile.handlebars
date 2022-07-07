@@ -1,22 +1,21 @@
 <div class="row">
   <div class="col-auto">
-    <h2><b>Welcome,<span id="name"> <i>{{name}}</i> </span> to Likin Hikin!</b></h2>
+    <h2>Welcome, {{name}} to Likin Hikin!</h2>
   </div>
 </div>
 
 <div class="row mt-4">
   <div class="col-md-6">
-    <h3 id="forge">Forge a new Trail!</h3>
+    <h3>Forge a new Trail!</h3>
 
     <form class="form new-trail-form">
       <div class="form-group">
-        <label for="trail-name"><b>Trail name:</b></label>
+        <label for="trail-name">Trail name:</label>
         <input class="form-input" type="text" id="trail-name" name="trail-name" />
       </div> 
-      
   
       <div>
-        <label for="states"><b>Select a State:</b></label>
+        <label for="states">Select a State:</label>
 
 <select name="State" id="States">
   <option value="AL">Alabama</option>
@@ -72,28 +71,9 @@
 	<option value="WY">Wyoming</option>
   
 </select>
-
-<label for="Mileage"><b>Trail Mileage:</b></label>
-      
-	  <select name="Mileage" id="miles">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-  <option value="6">6</option>
-  <option value="7">7</option>
-  <option value="8">8</option>
-  <option value="9">9</option>
-  <option value="10+">10+</option>
-	
-	
-  
-</select>
-	  
-	  </div>
+      </div>
       <div class="form-group">
-        <label for="trail-difficulty"><b>Trail Difficulty:</b></label>
+        <label for="trail-difficulty">Trail Difficulty:</label>
         <select name="trail-difficulty" type="number" id="trail-difficulty" name="trail-diffuculty" >
           <option value="1">Easy</option>
           <option value="2">Moderate</option>
@@ -103,7 +83,7 @@
       </div>
       <div class="form-group">
         <label for="trail-desc">Trail description:</label>
-        <textarea class="form-input" id="trail-desc" name="trail-desc" placeholder="Trail Description" ></textarea>
+        <textarea class="form-input" id="trail-desc" name="trail-desc"></textarea>
       </div>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Create</button>
@@ -112,7 +92,7 @@
   </div>
 
   {{#if trails.length}}
-  <div class="col-md-6 trails-list">
+  <div class="col-md-6 project-list">
     <h3>Saved Trails:</h3>
 
     {{#each trails}}
@@ -121,13 +101,12 @@
         <h4><a href="/trail/{{trail_id}}">{{trail_name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" id="delButton" data-id="{{trail_id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
       </div>
     </div>
     {{/each}}
   </div>
   {{/if}}
 </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d107539.4099170056!2d-71.56059363393281!3d44.06217150988914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1657136711736!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 <script src="./js/profile.js"></script>

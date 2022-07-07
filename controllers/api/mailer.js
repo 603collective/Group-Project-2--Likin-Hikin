@@ -21,8 +21,8 @@ async function sendEmail(recipient) {
   const emailInfo = {
     from: `${process.env.EMAIL_DISPLAY_NAME} <${process.env.EMAIL_SENDER}>`,
     to: `${recipient}`,
-    subject: 'Hello From Nodemailer',
-    text: 'Nodemailer says hello!',
+    subject: 'Welcome from the Likin Hikin Team!',
+    text: 'You have joined a community that is just as passionate as you are about the great outdoors! We hope you find your next great hike on our app, and look forward to your contributions as well.', // plain text body,
   };
 
   try {
@@ -34,4 +34,4 @@ async function sendEmail(recipient) {
 }
 
 module.exports = { sendEmail };
-// sendEmail('mixicek@gmail.com');
+
