@@ -111,3 +111,15 @@ select {
   height: 100%;
   object-fit: cover;
 }
+
+footer {
+  color: #056605;
+  background-color: #1b89bc;
+  text-align: center;
+}
+
+section {
+  border-style: solid;
+  border-color: #056605;
+  border-width: thin;
+}
