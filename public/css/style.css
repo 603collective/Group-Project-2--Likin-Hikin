@@ -146,6 +146,8 @@ body {
   url('../images/mountain-landscape-2031539.jpg');
 
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 
 }
