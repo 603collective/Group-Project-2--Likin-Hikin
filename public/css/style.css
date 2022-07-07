@@ -39,7 +39,18 @@ select {
 
 }
 
+#name{
+  font-family: 'Rouge Script', cursive;
+}
 
+h2 {
+  font-family: 'Rouge Script', cursive;
+
+}
+h3{
+  font-family: 'Rouge Script', cursive;
+
+}
 
 
 #signUpForm {
