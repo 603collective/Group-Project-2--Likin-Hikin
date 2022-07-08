@@ -1,16 +1,14 @@
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  const trail_name = document.querySelector('#trail-name').value.trim();
-  const description = document.querySelector('#trail-desc').value.trim();
-  const state = document.querySelector('#States').value.trim();
-  const length = document.querySelector('#miles').value.trim();
-  const difficulty = document.querySelector('#trail-difficulty').value.trim();
+  const name = document.querySelector('#project-name').value.trim();
+  const needed_funding = document.querySelector('#project-funding').value.trim();
+  const description = document.querySelector('#project-desc').value.trim();
 
-  if (trail_name && description) {
-    const response = await fetch(`/api/trails`, {
+  if (name && needed_funding && description) {
+    const response = await fetch(`/api/projects`, {
       method: 'POST',
-      body: JSON.stringify({ trail_name, description, state, length, difficulty }),
+      body: JSON.stringify({ name, needed_funding, description }),
       headers: {
         'Content-Type': 'application/json',
       },
@@ -19,7 +17,7 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to create trail');
+      alert('Failed to create project');
     }
   }
 };
@@ -28,22 +26,22 @@ const delButtonHandler = async (event) => {
   if (event.target.hasAttribute('data-id')) {
     const id = event.target.getAttribute('data-id');
 
-    const response = await fetch(`/api/trails/${id}`, {
+    const response = await fetch(`/api/projects/${id}`, {
       method: 'DELETE',
     });
 
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to delete trail');
+      alert('Failed to delete project');
     }
   }
 };
 
 document
-  .querySelector('.new-trail-form')
+  .querySelector('.new-project-form')
   .addEventListener('submit', newFormHandler);
 
 document
-  .querySelector('.trails-list')
+  .querySelector('.project-list')
   .addEventListener('click', delButtonHandler);

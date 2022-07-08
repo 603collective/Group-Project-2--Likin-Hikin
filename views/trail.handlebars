@@ -1,17 +1,14 @@
 <div class="text-center">
-  <h2><b>{{trail_name}}</b></h2>
-  <h2> State {{state}}</h2>
+  <h2>{{trail_name}}</h2>
   <p>{{{get_emoji}}}</p>
-  <p><b>{{description}}</b></p>
-  <p><b>Created by {{user_id}} on {{format_date createdAt}}</b></p>
+  <p>{{description}}</p>
+  <p>Created by {{user_id}} on {{format_date date_created}}</p>
   <p>
     <span for="img" aria-label="mountain"⛰️></span>
-    <span id="difficulty"><b>{{difficulty}}</span>
-    out of 5 difficulty rating</b>
-   </span>
-  </p><b>
-  Trail mileage is <span id="length">{{length}}</b>
+    <span class="trail-difficulty">{{difficulty}}</span>
+    out of 5 difficulty rating
+  </p>
   <p>
-    
+    <button class="btn btn-primary">Fund this Project!</button>
   </p>
 </div>
